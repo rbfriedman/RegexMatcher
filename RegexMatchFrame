@@ -1,0 +1,17 @@
+package Regex;
+
+import javax.swing.*;
+
+/**
+ *
+ */
+public class RegexMatchFrame extends JFrame {
+	private JPanel jpMain;
+	private RegexMatcher regexMatcher;
+	public RegexMatchFrame(RegexMatcher regexMatcher){
+		this.regexMatcher = regexMatcher;
+		this.jpMain = new JPanel();
+	}
+
+
+}
