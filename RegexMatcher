@@ -1,0 +1,91 @@
+package Regex;
+
+import java.util.Comparator;
+
+/**
+ *
+ *
+ * A game that finds the number of patterns between words.
+ * See if you are better than the machine!
+ *
+ * http://www.microsoft.com/typography/ctfonts/WordRecognition.aspx
+ */
+public class RegexMatcher implements Comparable<String> {
+	private String myWord;
+	public RegexMatcher(String myWord){
+		this.myWord = myWord;
+
+	}
+
+
+	public int compareTo(String aWord){
+		 return findNumberOfLikenesses(aWord);
+	}
+
+	private int findNumberOfLikenesses(String aWord){
+
+
+		 return 0;
+
+	}
+
+	private boolean lengthIsEqual(String aWord){
+		return myWord.length() ==  aWord.length();
+	}
+
+	private boolean hasDigits(String aWord){
+		return myWord.matches("\\d") && aWord.matches("\\d");
+	}
+
+
+
+	private boolean wordRescrambles(String aWord){
+	   //rescrambles
+		return false;
+	}
+
+	private boolean isAPalindrome(String aWord) {
+		return false;
+	}
+
+	private boolean containsAFood(String aWord){
+
+		return false;
+	}
+
+	private boolean isARhyme(String aWord){
+		return false;
+	}
+
+	private boolean hasSameNumSyllables(String aWord){
+		return false;
+	}
+
+	private boolean hasSameNumVowels(String aWord){
+		return false;
+	}
+
+	private boolean hasPairsOfLetter(String aWord){
+		return false;
+	}
+
+	private boolean hasTripletsOfLetter(String aWord){
+		return false;
+	}
+
+	private boolean hasSameNumericSequence(String aWord){
+		return false;
+	}
+
+	private boolean hasSameLetterSequence(String aWord){
+		return false;
+	}
+
+	public String getWord(){
+		return myWord;
+	}
+
+	public void setMyWord(String myWord){
+		this.myWord = myWord;
+	}
+}
